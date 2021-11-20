@@ -1,3 +1,5 @@
+# SOCUS - Study with Focus
+SOCUS is a web application which intends to provide the users with a seamless learning experience without any distractions. The main beneficiaries of this web application include the users who wish to learn Data Structures and Algorithms and Machine Learning.
 # User-Account-Sign-up-and-Sign-in
 The form templates was forked from 
 https://github.com/sefyudem/Sliding-Sign-In-Sign-Up-Form
