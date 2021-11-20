@@ -1,0 +1,216 @@
+MCQ 
+Which deletion can be insertion take place only at the other end(rear) and done from one end (front)?
+a) linked list
+b) Stack
+c) Tree
+d) queue
+e)both a&c
+Answer: d
+
+For Breadth-First Traversal on a graph is the data structure required?
+a) Stack
+b) queue
+c) array
+d) Tree
+e) Both a&b
+Answer: b
+
+Queue follows __________
+a) FIFO (First In First Out) principle
+b) LIFO (Last In First Out) principle
+c) Linear tree
+d) Ordered array
+e) all of these
+Answer: a
+
+Circular Queue is also called ________
+a) Square Buffer
+b) Ring Buffer
+c) Rectangle Buffer
+d) Curve Buffer
+e) None of these
+Answer: b
+
+ CODING QUESTIONS
+
+There are N processes to be completed. All the processes have a unique number assigned to them from 1 to N.
+
+Now, we are given two things:
+
+1)The calling order in which all the processes are called.
+2)The ideal order in which all the processes should have been executed.
+
+Executing a process takes 1 unit of time. Changing the position takes 1 unit of time.
+
+We have to find out the unit of time required to complete all the process such that a process is executed from the ideal order only when it exists at the same index in the calling order. We can push the first term from the calling order to the last thus rotating the order.
+
+Input Format
+First line contains a single integer N.
+Next line contains N space separated integers denoting the calling order.
+Last line contains N space separated integers denoting the ideal order.
+
+Constraints
+1 <= N <= 10^6
+
+Output Format
+The total time required
+
+Sample Input
+5
+5 4 2 3 1
+5 2 1 4 3
+Sample Output
+7
+
+QUESTIONS 2
+It's winter season. There is a long queue of students from the four prime courses at Coding Blocks and everyone is here to grab his hoodie. Each student of a course has a different roll number. Whenever a new student will come, he will search for his friend from the end of the queue. Note that a student can only has friend from his course and not from any other course. As soon as he will find any of the friend in the queue, he will stand behind him, otherwise he will stand at the end of the queue. At any moment Kartik Bhaiya will ask the student, who is standing in front of the queue, to come and put his name and grab his hoodie and then remove that student from the queue. There are Q operations of one of the following types:
+
+E x y : A new student of course x whose roll number is y will stand in queue according to the method mentioned above.
+D : Kartik Bhaiya will ask the student, who is standing in front of the queue, to come and put his name for the hoodie and remove him from the queue.
+Find out the order in which student put their name.
+
+Note: Number of dequeue operations will never be greater than enqueue operations at any point of time.
+
+Input Format
+First line contains an integer Q, denoting the number of operations. Next Q lines will contains one of the 2 types of operations.
+
+Constraints
+1 ≤ x ≤ 4 1 ≤ y ≤ 50000 1 ≤ Q ≤ 100000
+
+Output Format
+For each 2nd type of operation, print two space separated integers, the front student's course and roll number.
+
+Sample Input
+5
+E 1 1
+E 2 1
+E 1 2
+D
+D
+Sample Output
+1 1
+1 2
+
+QUESTIONS 3
+
+You are given given an array and a positive integer k, find the first negative integer for each and every window(contiguous subarray) of size k. If a window does not contain a negative integer, then print 0 for that window.
+
+Input Format
+First line contains integer t as number of test cases. Each test case contains two lines. First line contains two integers n and k where n is length of the array and k is the size of window and second line contains n space separated integer.
+
+Constraints
+1 < t < 10 1< n, k < 10000000
+
+Output Format
+For each test case you have to print the required output as given below.
+
+Sample Input
+2
+8 3
+12 -1 -7 8 -15 30 16 28
+ 8 4
+12 -1 -7 8 -15 30 16 28
+Sample Output
+-1 -1 -7 -15 -15 0 
+-1 -1 -7 -15 -15
+Explanation
+For first test case : Subarray of window size 3 is ( 12 -1 -7), (-1, -7, 8), and so on.. Take first negative number from each window and print them.
+
+
+QUESTION 4
+You are given given an array and a positive integer k, find the first negative integer for each and every window(contiguous subarray) of size k. If a window does not contain a negative integer, then print 0 for that window.
+
+Input Format
+First line contains integer t as number of test cases. Each test case contains two lines. First line contains two integers n and k where n is length of the array and k is the size of window and second line contains n space separated integer.
+
+Constraints
+1 < t < 10 1< n, k < 10000000
+
+Output Format
+For each test case you have to print the required output as given below.
+
+Sample Input
+2
+8 3
+12 -1 -7 8 -15 30 16 28
+ 8 4
+12 -1 -7 8 -15 30 16 28
+Sample Output
+-1 -1 -7 -15 -15 0 
+-1 -1 -7 -15 -15
+Explanation
+For first test case : Subarray of window size 3 is ( 12 -1 -7), (-1, -7, 8), and so on.. Take first negative number from each window and print them.
+
+QUESTION 5
+
+To sort a queue
+
+Given a queue with random elements, we need to sort it. We are not allowed to use extra space. The operations allowed on queue are:
+
+ 
+
+enqueue () : Adds an item to rear of queue. this function is called push ().
+
+dequeue () : Removes an item from front of queue. this function is called pop().
+
+isEmpty() : Checks if a queue is empty. this function is called empty ().
+
+ 
+
+(To sort a queue we can make a function (findminIndex()) which will return the minimum index position of queue and then we can dequeue all the items from original queue and enqueue to same queue except min index item. At the end we will enqueue the min index item also. Then we will call above function (findminIndex()) with size to be searched decremented by 1 and repeat the next steps.)
+
+Sample input:
+
+enqueue 1 enqueue 5 enqueue 4 dequeue enqueue 9 enqueue 8 stop
+
+Output:
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Element dequeued : 1
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+4 5 8 9
+
+
+QUESTION 6
+
+In a training camp of NCC cadets while marching to the check post, suddenly colonel command them to make a queue and turn around with another queue. With this scenario represent here, use queue data structure so that cadets can turn around in another queue.
+
+Given a queue and an empty queue.
+
+The last member of the queue should be the first member of the new queue.
+
+Sample Input: enqueue 1 enqueue 2 enqueue 4 enqueue 6 enqueue 8 stop
+
+(To reverse a queue using only queues, we have to move all elements from front to the end of queue except last element, then we can dequeue that element and enqueue to another queue. This process will be repeated till first queue is empty and 2nd queue is in reverse order of first queue.)
+
+Output:
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+Give one of options: enqueue, dequeue, stop
+
+8 6 4 2
+
